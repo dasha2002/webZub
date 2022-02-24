@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.rowMiddle{
+  position: fixed;
+  left: 0; bottom: 300px;
+  right: 0; bottom: 150px;
+  text-align: center;
+}
