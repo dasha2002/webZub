@@ -10,4 +10,12 @@ router.get('/admin', function(req, res, next) {
   res.render('admin', { });
 });
 
+router.get('/visitorMenu', function(req, res, next) {
+  res.render('visitorMenu', { });
+});
+router.get('/admin/admina', function(req, res, next) {
+  res.render('admina', { });
+});
+
+
 module.exports = router;

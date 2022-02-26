@@ -7,9 +7,27 @@ a {
   color: #00B7FF;
 }
 
+.rowBellowTheMiddle{
+  position: fixed;
+  left: 0; bottom: 300px;
+  right: 0; bottom: 150px;
+  text-align: center;
+}
+
 .rowMiddle{
   position: fixed;
   left: 0; bottom: 300px;
   right: 0; bottom: 150px;
   text-align: center;
+}
+
+.lines{
+  margin-bottom: 80px;
+}
+
+.btn {
+  padding: 50px 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  width:20%;
 }
