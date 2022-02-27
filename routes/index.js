@@ -17,5 +17,17 @@ router.get('/admin/admina', function(req, res, next) {
   res.render('admina', { });
 });
 
+router.get('/teamsMain', function(req, res, next) {
+  res.render('teamsMain', { });
+});
+
+router.get('/teamDetail', function(req, res, next) {
+  res.render('teamDetail', { });
+});
+
+
+
+
+
 
 module.exports = router;
