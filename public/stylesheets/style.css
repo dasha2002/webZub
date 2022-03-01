@@ -57,10 +57,12 @@ a {
   z-index: 2;
   width: 200px;
   height:150px;
-  margin: 50px auto;
+  margin: 100px 50px;
   padding: 20px;
   background: white;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black; }
+
+
 
