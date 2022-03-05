@@ -32,37 +32,41 @@ a {
   width:20%;
 }
 
-#bg {
-  position:fixed;
-  top:-50%;
-  left:-50%;
-  width:200%;
-  height:200%;
-}
-
-#bg img {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:-120px;
-  margin:auto;
-  min-width:50%;
-  min-height:50%;
-
-}
 
 #page-wrap {
   position: relative;
   z-index: 2;
   width: 200px;
   height:150px;
-  margin: 100px 50px;
   padding: 20px;
   background: white;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black; }
 
+#page-wrapSM {
+  position: relative;
+  z-index: 2;
+  width: 35px;
+  height:30px;
+  background: white;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black; }
+
+.card {
+  padding: 30px;
+  background-image: url("../images/BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
+  background-size: cover;
+}
+
+.myText{
+  font-size: 12px;
+  line-height: 2.2;
+}
 
 
