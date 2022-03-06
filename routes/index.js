@@ -13,9 +13,16 @@ router.get('/admin', function(req, res, next) {
 router.get('/visitorMenu', function(req, res, next) {
   res.render('visitorMenu', { });
 });
-router.get('/admin/admina', function(req, res, next) {
-  res.render('admina', { });
+
+router.get('/EventAdminMenu', function(req, res, next) {
+  res.render('EventAdminMenu', { });
 });
+
+router.get('/ManageMatchaps', function(req, res, next) {
+  res.render('ManageMatchaps', { });
+});
+
+
 
 router.get('/teamsMain', function(req, res, next) {
   res.render('teamsMain', { });

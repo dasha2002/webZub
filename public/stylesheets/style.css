@@ -39,7 +39,7 @@ a {
   width: 200px;
   height:150px;
   padding: 20px;
-  background: white;
+  background: #BCBCBC;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black; }
@@ -49,13 +49,12 @@ a {
   z-index: 2;
   width: 35px;
   height:30px;
-  background: white;
+  background: #FFFF66;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black; }
 
 .card {
-  padding: 30px;
   background-image: url("../images/BG.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,6 +66,20 @@ a {
 .myText{
   font-size: 12px;
   line-height: 2.2;
+  color: #2172D2;
+  font-weight: 630;
+}
+
+.myTextSM{
+  font-size: 18px;
+  color: #2172D2;
+  font-weight: 600;
+}
+
+.myTextAdminTitle{
+  font-size: 20px;
+  color: #FFA000;
+  font-weight: 630;
 }
 
 
