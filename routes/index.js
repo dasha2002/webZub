@@ -22,6 +22,9 @@ router.get('/ManageMatchaps', function(req, res, next) {
   res.render('ManageMatchaps', { });
 });
 
+router.get('/AddNewMatchap', function(req, res, next) {
+  res.render('AddNewMatchap', { });
+});
 
 
 router.get('/teamsMain', function(req, res, next) {
