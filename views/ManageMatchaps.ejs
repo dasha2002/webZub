@@ -15,19 +15,19 @@
           <img style="height: 60px" src="images/nba.png">
           <span>NBA Managment System</span>
       </div>
-      <div class="col-7 pt-1">
+      <div class="col-8 pt-1">
           <h1 class="text-center">Manage Maychups</h1>
       </div>
-      <div class="col-3 pt-1" style="text-align: right">
-          <a href="/" class="btn btn-secondary btn-sm">Logout</a>
-          <a href="/" class="btn btn-secondary btn-sm">Back</a>
+      <div class="col-2 pt-1" style="text-align: right">
+          <a href="/" class="btn btn-secondary btn-sm" style="width: max-content">Logout</a>
+          <a href="/" class="btn btn-secondary btn-sm" style="width: max-content">Back</a>
       </div>
   </div>
   <hr>
 
-  <div class="row" style="align-content: center">
-      <div class="col-2"></div>
-      <div class="col-2" align="center">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-3"></div>
+      <div class="col-2" align="center" style="width: max-content">
           <select class="form-select form-select-sm" aria-label="Default select example" size="1">
               <option selected>2021-2022</option>
               <option value="1">2000-2000</option>
@@ -35,18 +35,29 @@
               <option value="3">2000-2000</option>
           </select>
       </div>
-      <div class="col-2" align="right"><button type="button" class="btn btn-outline-secondary btn-sm"><</button></div>
-      <div class="col-2" align="left">
-          <form>
-              <div class="form-group">
-                  <input type="date" class="form-control">
+      <div class="col-1"></div>
+
+      <div class="col-3" align="left" style="width: max-content">
+          <div class="row">
+              <div class="col-1 pt-1">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  </div>
               </div>
-          </form>
+              <div class="col">
+                  <form>
+                      <div class="form-group" style="width: max-content">
+                          <input type="date" class="form-control">
+                      </div>
+                  </form>
+              </div>
+          </div>
+
       </div>
-      <div class="col-3" align="left">
-          <button type="button" class="btn btn-primary">Search</button>
+      <div class="col" align="left">
+          <button type="button" class="btn btn-primary" style="width: max-content">Search</button>
       </div>
-      <div class="col-3"></div>
+
   </div>
 
 
@@ -63,55 +74,62 @@
 
     <div class="tab-content">
         <div class="tab-pane active" id="Roster" role="tabpanel" aria-labelledby="Roster-tab">
-
-                <!-- табл1
-
+            <br>
+            <br>
+            <br>
             <table class="table table-bordered table-striped" style="text-align: center">
                 <thead>
                 <tr>
-                    <th>No.</th>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>DataofBirth</th>
-                    <th>College</th>
-                    <th>Experience</th>
-                    <th>Salary</th>
+                    <th>Date</th>
+                    <th>Team(Away)</th>
+                    <th>Team(Home)</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Finished</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>7</td>
-                    <td>Jaylen Brown</td>
-                    <td>SF</td>
-                    <td></td>
-                    <td>California</td>
-                    <td>0</td>
-                    <td>$4,743,000</td>
+                    <td>2016/10/26</td>
+                    <td>Preseason</td>
+                    <td>Chocago Bulls</td>
+                    <td>7:30 PM</td>
+                    <td>.....</td>
+                    <td>Yes</td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Update</a></td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Delete</a></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>Jaylen Brown</td>
-                    <td>SF</td>
-                    <td></td>
-                    <td>California</td>
-                    <td>0</td>
-                    <td>$4,743,000</td>
+                    <td>2016/10/26</td>
+                    <td>Preseason</td>
+                    <td>Chocago Bulls</td>
+                    <td>7:30 PM</td>
+                    <td>.....</td>
+                    <td>Yes</td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Update</a></td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Delete</a></td>
                 </tr>
                 </tbody>
-            </table>-->
+            </table>
         </div>
         <div class="tab-pane" id="Matchup" role="tabpanel" aria-labelledby="Matchup-tab">
-            <a href="/AddNewMatchap" class="btn btn-primary">+Add a new matchup</a>
-            <!--<table class="table table-bordered table-striped" style="text-align: center">
+            <br>
+            <a href="/AddNewMatchap" class="btn btn-primary" style="width: max-content">+Add a new matchup</a>
+            <br>
+            <br>
+            <table class="table table-bordered table-striped" style="text-align: center">
                 <thead>
                 <tr>
                     <th>Date</th>
-                    <th>Matchup Type</th>
-                    <th>Opponent</th>
-                    <th>Start Time</th>
-                    <th>Result</th>
+                    <th>Team(Away)</th>
+                    <th>Team(Home)</th>
+                    <th>Time</th>
                     <th>Location</th>
-                    <th>Status</th>
+                    <th>Finished</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -120,27 +138,28 @@
                     <td>Preseason</td>
                     <td>Chocago Bulls</td>
                     <td>7:30 PM</td>
-                    <td>105-99</td>
-                    <td>Location</td>
-                    <td>Finished</td>
+                    <td>.....</td>
+                    <td>Yes</td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Update</a></td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Delete</a></td>
                 </tr>
                 <tr>
                     <td>2016/10/26</td>
                     <td>Preseason</td>
                     <td>Chocago Bulls</td>
                     <td>7:30 PM</td>
-                    <td>105-99</td>
-                    <td>Location</td>
-                    <td>Finished</td>
+                    <td>.....</td>
+                    <td>Yes</td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Update</a></td>
+                    <td><a href="/" class="btn btn-outline-secondary btn-sm" style="width: max-content">Delete</a></td>
                 </tr>
                 </tbody>
-            </table>-->
+            </table>
+            <br>
+            <div class="col" align="right"> <a href="/" class="btn btn-primary" style="width: max-content" >Export to Exel</a></div>
+
         </div>
-
     </div>
-
-
-
 
 
     <div class="fixed-bottom">
