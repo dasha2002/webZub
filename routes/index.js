@@ -31,7 +31,7 @@ router.get('/AddNewMatchap', function(req, res, next) {
 router.get('/teamsMain',   async function(req, res, next) {
   let teams = await Team.findAll();
   console.log(teams);
-  res.render('teamsMain', { });
+  res.render('teamsMain', {teams });
 });
 
 router.get('/teamDetail',  function(req, res, next) {

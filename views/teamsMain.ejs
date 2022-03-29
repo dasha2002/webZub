@@ -47,32 +47,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img style="height: 60px" src="images/logo.png">
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <p>Team name</p>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Roster</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Matchup</a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">First Lineup</a>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                        <% for (let team of teams) {%>
                         <tr>
                             <td>
                                 <div class="row">
@@ -81,7 +57,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="row">
-                                            <p>Team name</p>
+                                            <p><%=team.Name %></p>
                                             <div class="row">
                                                 <div class="col-2">
                                                     <a href="/teamDetail" class="text-decoration-none text-primary">Roster1</a>
@@ -99,84 +75,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img style="height: 60px" src="images/logo.png">
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <p>Team name</p>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Roster</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Matchup</a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">First Lineup</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img style="height: 60px" src="images/logo.png">
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <p>Team name</p>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Roster</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Matchup</a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">First Lineup</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img style="height: 60px" src="images/logo.png">
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <p>Team name</p>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Roster</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">Matchup</a>
-                                                </div>
-                                                <div class="col-4">
-                                                    <a href="/visitorMenu" class="text-decoration-none text-primary">First Lineup</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                        <%}%>
                         </tbody>
                     </table>
                 </div>
