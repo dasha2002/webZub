@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const {Team} = require('../models');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -27,11 +28,14 @@ router.get('/AddNewMatchap', function(req, res, next) {
 });
 
 
-router.get('/teamsMain', function(req, res, next) {
+router.get('/teamsMain',   async function(req, res, next) {
+  let teams = await Team.findAll();
+  console.log(teams);
   res.render('teamsMain', { });
 });
 
-router.get('/teamDetail', function(req, res, next) {
+router.get('/teamDetail',  function(req, res, next) {
+
   res.render('teamDetail', { });
 });
 

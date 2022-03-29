@@ -15,7 +15,9 @@
     "mysql2": "^2.3.3",
     "save": "^2.4.0",
     "save-dev": "^0.0.1-security",
-    "sequelize": "^6.17.0",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
     "sequelize-cli": "^6.4.1"
   }
 }
