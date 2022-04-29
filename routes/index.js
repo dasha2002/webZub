@@ -34,9 +34,11 @@ router.get('/teamsMain',   async function(req, res, next) {
   res.render('teamsMain', {teams });
 });
 
-router.get('/teamDetail',  function(req, res, next) {
-
-  res.render('teamDetail', { });
+router.get('/teamDetail/:idteam',  async function(req, res, next) {
+  let idteam = req.params.idteam;
+  let teamDetail = await Team.findByPk(idteam);
+  let Player = await teamDetail.getPlayer();
+  res.render('teamDetail', {teamDetail, Player});
 });
 
 

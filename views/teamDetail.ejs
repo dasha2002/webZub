@@ -27,7 +27,7 @@
     <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1">
             <img style="height: 60px" src="images/logo.png">
-        <span> Team Name | Division Name of Conference Name</span>
+        <span> <%=teamDetail.Name%> | Division Name of Conference Name</span>
         </div>
     </div>
 
@@ -92,24 +92,17 @@
                 </tr>
                 </thead>
                 <tbody>
+                <% for (let pl of Player ){%>
                 <tr>
-                    <td>7</td>
-                    <td><Jaylen Brown></td>
+                    <td>0</td>
+                    <td><%=pl.FirstName%></td>
                     <td>SF</td>
                     <td></td>
                     <td>California</td>
                     <td>0</td>
                     <td>$4,743,000</td>
                 </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Jaylen Brown</td>
-                    <td>SF</td>
-                    <td></td>
-                    <td>California</td>
-                    <td>0</td>
-                    <td>$4,743,000</td>
-                </tr>
+                <%}%>
                 </tbody>
             </table>
         </div>
